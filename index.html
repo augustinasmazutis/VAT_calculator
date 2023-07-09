@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VAT Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header></header>
+
+      <main>
+        <section class="headline"><h1>VAT Calculator</h1></section>
+        <section class="input">
+          <div class="form-group">
+            <label for="input-without-pvm">Amount without VAT: </label>
+            <input type="text" id="input-without-pvm" />
+          </div>
+
+          <div class="form-group">
+            <label for="input-with-pvm">Amount with VAT: </label>
+            <input type="text" id="input-with-pvm" />
+          </div>
+
+          <div class="form-group">
+            <label for="pvm-type">VAT rate: </label>
+            <select name="pvm-type" id="pvm-type">
+              <option value="21">21%</option>
+              <option value="9">9%</option>
+              <option value="5">5%</option>
+            </select>
+          </div>
+        </section>
+        <section class="output">
+          <p>Amount without VAT:</p>
+          <div class="output__container">
+            <span id="output-without-pvm"></span>
+          </div>
+
+          <p>Amount with VAT:</p>
+          <div class="output__container">
+            <span id="output-with-pvm"></span>
+          </div>
+
+          <p>VAT rate:</p>
+          <div class="output__container">
+            <span id="pvm-type-output"></span>
+          </div>
+
+          <p id="error-message"></p>
+        </section>
+      </main>
+
+      <footer></footer>
+    </div>
+  </body>
+</html>
